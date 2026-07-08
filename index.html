@@ -162,8 +162,8 @@
 
     /* ── CURATOR (centered, above the download button) ── */
     .curator-side {
-      display: flex; align-items: center; justify-content: center;
-      gap: 22px;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 20px;
       margin: 44px auto 0;
       position: relative; z-index: 1;
     }
@@ -201,6 +201,12 @@
     }
     .interview-link:hover { color: var(--text); background: rgba(236,59,86,0.08); border-color: rgba(236,59,86,0.3); }
     .interview-link::after { content: '↗'; font-size: 10px; color: var(--red); }
+
+    /* centered row of curator links (interview + contact) */
+    .curator-links { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px; margin-top: 4px; }
+    .contact-pill { text-transform: none; letter-spacing: 0.02em; white-space: normal; }
+    .contact-pill::after { content: none; }
+    .contact-pill .pill-ic { color: var(--red); margin-right: 3px; }
 
     /* download button centered under the photo */
     .download-wrap { text-align: center; margin-top: 30px; position: relative; z-index: 1; }
@@ -381,8 +387,12 @@
           <strong>Mr. Rajendra Aryal</strong>
           Guide curated &amp; provided by &#8212; Content Manager &amp; IT Professional for 600+ Nepali artists
         </p>
+        <div class="curator-links">
+          <a class="interview-link" href="https://www.setopati.com/art/interview/351608" target="_blank" rel="noopener">Read his interview &#8212; Setopati</a>
+          <a class="interview-link contact-pill" href="mailto:rajendraaryal2@gmail.com" title="Email Mr. Rajendra Aryal"><span class="pill-ic">&#9993;</span>rajendraaryal2@gmail.com</a>
+          <a class="interview-link" href="https://www.facebook.com/RajendraAryalPage" target="_blank" rel="noopener">Facebook</a>
+        </div>
       </div>
-      <a class="interview-link" href="https://www.setopati.com/art/interview/351608" target="_blank" rel="noopener">Read his interview &#8212; Setopati</a>
     </div>
 
     <!--
