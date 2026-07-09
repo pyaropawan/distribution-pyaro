@@ -237,6 +237,10 @@
     .download-btn:hover { background: rgba(236,59,86,0.22); border-color: var(--red); transform: translateY(-2px); }
     .download-btn svg { width: 14px; height: 14px; stroke: var(--red); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
     .download-btn .dl-sub { font-size: 9px; letter-spacing: 0.1em; color: var(--text-muted); text-transform: none; }
+    .dl-label { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 14px; }
+    .downloads { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+    .downloads .download-btn { width: min(380px, 100%); box-sizing: border-box; justify-content: flex-start; text-align: left; }
+    .download-btn .dl-text { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; line-height: 1.35; }
 
     .subhead { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--red); margin: 28px 0 4px; }
     .subhead:first-child { margin-top: 0; }
@@ -401,11 +405,21 @@
     ════════════════════════════════════════════════
     -->
     <div class="download-wrap">
-      <a class="download-btn" href="Music_and_Tech.pdf" download="Music and Tech.pdf">
-        <svg viewBox="0 0 24 24"><path d="M12 4v12M12 16l-4-4M12 16l4-4"/><path d="M4 18v1a1 1 0 001 1h14a1 1 0 001-1v-1"/></svg>
-        Download the full guide
-        <span class="dl-sub">&#8212; Music and Tech (PDF)</span>
-      </a>
+      <div class="dl-label">Guides &amp; resources</div>
+      <div class="downloads">
+        <a class="download-btn" href="Music_and_Tech.pdf" download="Music and Tech (English).pdf">
+          <svg viewBox="0 0 24 24"><path d="M12 4v12M12 16l-4-4M12 16l4-4"/><path d="M4 18v1a1 1 0 001 1h14a1 1 0 001-1v-1"/></svg>
+          <span class="dl-text">Music &amp; Tech &#8212; the full guide<span class="dl-sub">English &#183; PDF</span></span>
+        </a>
+        <a class="download-btn" href="Music_and_Technology_np.pdf" download="Music and Technology (Nepali).pdf">
+          <svg viewBox="0 0 24 24"><path d="M12 4v12M12 16l-4-4M12 16l4-4"/><path d="M4 18v1a1 1 0 001 1h14a1 1 0 001-1v-1"/></svg>
+          <span class="dl-text">Music &amp; Technology<span class="dl-sub">नेपाली (Nepali) &#183; PDF</span></span>
+        </a>
+        <a class="download-btn" href="Facebook_YouTube_upload_process.pdf" download="Facebook and YouTube upload process (Nepali).pdf">
+          <svg viewBox="0 0 24 24"><path d="M12 4v12M12 16l-4-4M12 16l4-4"/><path d="M4 18v1a1 1 0 001 1h14a1 1 0 001-1v-1"/></svg>
+          <span class="dl-text">Facebook &amp; YouTube upload process<span class="dl-sub">नेपाली (Nepali) &#183; PDF</span></span>
+        </a>
+      </div>
     </div>
   </section>
 
